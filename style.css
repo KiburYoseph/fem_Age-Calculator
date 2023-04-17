@@ -6,22 +6,23 @@ body {
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: rgb(230, 230, 230);
+    background-color: hsl(0, 0%, 94%);
 }
 
 .container {
     background-color: white;
     min-width: clamp(50%, 50vw, 70%);
     min-height: 70%;
-    border-radius: 30px;
+    border-radius: 30px 30px 200px 30px;
+    padding: clamp(0.1rem, 5vw, 4rem);
+    padding-bottom: 0px;
+    position: relative;
 }
 
 .formsContainer {
     display: flex;
     gap: clamp(0.2rem, 10vw, 1rem);
     justify-content: flex-start;
-    padding: clamp(1rem, 10vw, 1.5rem);
-    padding-left: clamp(0.1rem, 5vw, 4rem);
 }
 
 .form {
@@ -32,8 +33,8 @@ body {
 }
 
 .form > input {
-    border: solid rgb(172, 172, 172) 2px;
-    border-radius: 16%;
+    border: solid rgb(172, 172, 172) 1px;
+    border-radius: 12%;
     width: clamp(0.2rem, 10vw, 8rem);
     height: clamp(0.1rem, 6vw, 4rem);
     margin-top: clamp(0.01rem, 3vw, 0.5rem);
@@ -43,6 +44,11 @@ body {
     font-weight: 600;
 }
 
+hr {
+    margin-top: clamp(0.2rem, 5vw, 4rem);
+    margin-right: clamp(0.2rem, 5vw, 1rem);
+}
+
 .inputTitle {
     font-weight: 600;
     letter-spacing: 0.2rem;
@@ -50,6 +56,53 @@ body {
     font-style: normal;
 }
 
+.outputContainer { 
+    font-size: clamp(0.2rem, 5vw, 3rem);
+    color: hsl(0, 0%, 8%);
+    font-style: italic;
+    line-height: clamp(0.6rem, 13vw, 7rem);
+}
 
+.finalValue {
+    color: hsl(259, 100%, 65%);
+    letter-spacing: clamp(0.1rem, 4vw, 1rem);
+}
 
+.buttonandbreak {
+    position: relative;
+    border: solid white 1px;
+}
 
+button{
+    border: none;
+    border-radius: 50%;
+    width: clamp(0.3rem, 8vw, 6rem);
+    height: clamp(0.3rem, 8vw, 6rem);
+    background-color: hsl(259, 100%, 65%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: clamp(2%, 10vw, 20%);
+    right: clamp(1%, 10vw, 2%);
+    transition: 200ms;
+}
+
+button:hover {
+    background-color: hsl(259, 50%, 49%)
+}
+
+button:active {
+    background-color: hsl(259, 47%, 31%)
+}
+
+img {
+    width: clamp(0.3rem, 6vw, 4rem);
+    height: clamp(0.3rem, 6vw, 4rem);
+}
+
+@media (max-width: 1240px) {
+    button{
+    right: 45%;
+    }
+}
