@@ -84,7 +84,7 @@ button{
     align-items: center;
     position:absolute;
     top: clamp(2%, 10vw, 20%);
-    right: clamp(1%, 10vw, 2%);
+    right: clamp(0%, 10vw, 1%);
     transition: 200ms;
 }
 
@@ -93,7 +93,7 @@ button:hover {
 }
 
 button:active {
-    background-color: hsl(259, 47%, 31%)
+    background-color: hsl(259, 53%, 20%)
 }
 
 img {
