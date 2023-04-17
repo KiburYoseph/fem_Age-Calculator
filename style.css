@@ -1,0 +1,55 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(230, 230, 230);
+}
+
+.container {
+    background-color: white;
+    min-width: clamp(50%, 50vw, 70%);
+    min-height: 70%;
+    border-radius: 30px;
+}
+
+.formsContainer {
+    display: flex;
+    gap: clamp(0.2rem, 10vw, 1rem);
+    justify-content: flex-start;
+    padding: clamp(1rem, 10vw, 1.5rem);
+    padding-left: clamp(0.1rem, 5vw, 4rem);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-size: clamp(0.1rem, 1.2vw, 0.9rem);
+    font-style: italic;
+}
+
+.form > input {
+    border: solid rgb(172, 172, 172) 2px;
+    border-radius: 16%;
+    width: clamp(0.2rem, 10vw, 8rem);
+    height: clamp(0.1rem, 6vw, 4rem);
+    margin-top: clamp(0.01rem, 3vw, 0.5rem);
+    margin-bottom: clamp(0.01rem, 3vw, 0.5rem);
+    font-size: clamp(0.1rem, 3vw, 1.5rem);
+    padding-left: clamp(0.1rem, 3vw, 0.7rem);
+    font-weight: 600;
+}
+
+.inputTitle {
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    font-size: clamp(0.1rem, 3vw, 1.3rem);
+    font-style: normal;
+}
+
+
+
+
