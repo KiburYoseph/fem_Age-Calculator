@@ -33,6 +33,7 @@ body {
 }
 
 .form > input {
+    outline: none;
     border: solid rgb(172, 172, 172) 1px;
     border-radius: 12%;
     width: clamp(0.2rem, 10vw, 8rem);
@@ -42,6 +43,10 @@ body {
     font-size: clamp(0.1rem, 3vw, 1.5rem);
     padding-left: clamp(0.1rem, 3vw, 0.7rem);
     font-weight: 600;
+}
+
+.form > input:focus {
+    border-color: hsl(259, 100%, 65%);
 }
 
 hr {
@@ -54,6 +59,10 @@ hr {
     letter-spacing: 0.2rem;
     font-size: clamp(0.1rem, 3vw, 1.3rem);
     font-style: normal;
+}
+
+.error {
+    color: hsl(0, 100%, 67%);
 }
 
 .outputContainer { 

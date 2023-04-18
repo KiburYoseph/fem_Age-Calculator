@@ -16,18 +16,18 @@
         <div class="formsContainer">  
           <div class="form">
             <label class="inputTitle">Day</label>
-            <input type="number" placeholder="DD">
-            <label class="dayError">Please enter a valid Day</label>
+            <input type="number" placeholder="DD" id="dayInput">
+            <label class="dayError error">Please enter a valid Day</label>
           </div>
           <div class="form">
             <label class="inputTitle">Month</label>
-            <input type="number" placeholder="MM">
-            <label class="monthError">Please enter a valid Month</label>
+            <input type="number" placeholder="MM" id="monthInput">
+            <label class="monthError error">Please enter a valid Month</label>
           </div>
           <div class="form">
             <label class="inputTitle">Year</label>
-            <input type="number" placeholder="YYYY">
-            <label class="yearError">Please enter a valid Year</label>
+            <input type="number" placeholder="YYYY" id="yearInput">
+            <label class="yearError error">Please enter a valid Year</label>
           </div>
         </div>
         <div class="buttonandbreak">
@@ -35,9 +35,9 @@
           <button id="button"><img src="./assets/images/icon-arrow.svg" alt="arrow icon"></button>
         </div> 
         <div class="outputContainer">
-            <h1><span class="finalValue">--</span>years<br>
-            <span class="finalValue">--</span>months<br>
-            <span class="finalValue">--</span>days</h1>
+            <h1><span class="finalValue" id="yearOutput">--</span>years<br>
+            <span class="finalValue" id="monthOutput">--</span>months<br>
+            <span class="finalValue" id="dayOutput">--</span>days</h1>
         </div>
       </main>
 </body>
