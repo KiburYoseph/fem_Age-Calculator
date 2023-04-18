@@ -111,6 +111,7 @@ button{
     top: clamp(2%, 10vw, 20%);
     right: clamp(0%, 10vw, 1%);
     transition: 200ms;
+    cursor: pointer;
 }
 
 button:hover {
