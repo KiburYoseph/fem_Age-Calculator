@@ -106,3 +106,9 @@ img {
     right: 45%;
     }
 }
+
+@media (max-width: 948px) {
+    .container {
+        border-radius: 30px 30px 100px 30px;
+    }
+}
