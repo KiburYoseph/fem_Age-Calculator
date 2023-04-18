@@ -16,7 +16,23 @@ body {
     border-radius: 30px 30px 200px 30px;
     padding: clamp(0.1rem, 5vw, 4rem);
     padding-bottom: 0px;
+    padding-top: 0px;
     position: relative;
+}
+
+.container > h1 {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: clamp(0.1rem, 4vw, 3rem);
+}
+
+.container > h2 {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: clamp(0.1rem, 2.3vw, 1.4rem);
 }
 
 .formsContainer {
